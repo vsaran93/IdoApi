@@ -22,6 +22,10 @@ namespace Domain.Entities
         [Column("phone_number")]
         public string PhoneNumber { get; set; }
 
-        public UserDetail? Detail { get; set; }
+        public UserDetail? UserDetail { get; set; }
+
+        public ICollection<Role> Roles { get; set; }
+
+        public RefreshToken RefreshToken { get; set; }
     }
 }

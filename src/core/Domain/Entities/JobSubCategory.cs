@@ -18,5 +18,7 @@ namespace Domain.Entities
 
         [Column("description")]
         public string Description { get; set; }
+
+        public JobCategory JobCategory { get; set; }  = null!;
     }
 }

@@ -15,5 +15,7 @@ namespace Domain.Entities
 
         [Column("description")]
         public string Description { get; set; }
+
+        public ICollection<JobSubCategory> JobSubCategories { get; } = new List<JobSubCategory>();
     }
 }

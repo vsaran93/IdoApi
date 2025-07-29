@@ -19,19 +19,22 @@ namespace Domain.Entities
         [Column("job_category_id")]
         public int JobCategoryId { get; set; }
 
-         [Column("job_sub_category_id")]
+        [Column("job_sub_category_id")]
         public int JobSubCategoryId { get; set; }
 
-         [Column("created_by")]
+        [Column("created_by")]
         public int CreatedBy { get; set; }
 
-         [Column("assigned_to")]
+        [Column("assigned_to")]
         public int AssignedTo { get; set; }
 
-         [Column("status")]
+        [Column("status")]
         public string Status { get; set; }
 
-         [Column("address_id")]
+        [Column("address_id")]
         public int AddressId { get; set; }
+        public JobCategory JobCategory { get; set; }
+        public JobSubCategory JobSubCategory { get; set; }
+        public Address Address { get; set; }
     }
 }

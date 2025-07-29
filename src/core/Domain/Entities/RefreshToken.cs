@@ -24,6 +24,7 @@ namespace Domain.Entities
 
         [Column("expires_at")]
         public DateTime ExpiresAt { get; set; }
+        public User User { get; set; }
 
     }
 }
